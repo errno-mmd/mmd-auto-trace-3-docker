@@ -13,9 +13,9 @@ set TM=%time: =0%
 set TM2=%TM::=%
 set DTTM=%date:/=%_%TM2:~0,6%
 
-set COMMAND="cd /mmd-auto-trace-3/src && python3.9 executor.py --video-file /input/%INPUT_FILE% --parent-dir /input/%INPUT_STEM%_%DTTM% --process prepare,alphapose,multipose,posetriplet,mix,motion --verbose 20 --log-mode 0 --lang en"
+set COMMAND="cd /mmd-auto-trace-3/src && python3.9 executor.py --video-file '/input/%INPUT_FILE%' --parent-dir '/input/%INPUT_STEM%_%DTTM%' --process prepare,alphapose,multipose,posetriplet,mix,motion --verbose 20 --log-mode 0 --lang en"
 
-docker run --gpus all --rm -ti -v %INPUT_DIR%:/input mmd-auto-trace-3:latest bash -c %COMMAND%
+docker run --gpus all --rm -ti -v "%INPUT_DIR%:/input" mmd-auto-trace-3:latest bash -c %COMMAND%
 
 set MOTION_DIR=%INPUT_DIR%%INPUT_STEM%_%DTTM%\06_motion
 explorer "%MOTION_DIR%"
