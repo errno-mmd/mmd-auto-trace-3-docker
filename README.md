@@ -3,12 +3,17 @@ Tool to run MMD auto trace v3 on Docker
 
 See [README.en.md](README.en.md) if you are not familier with Japanese.
 
+## 概要
+
+MMD自動トレースv3を(Dockerを用いて)ローカルPCで動かすためのツールです。
+
 ## 動作に必要なもの
 
 - Windows 11
 - 4GB以上のVRAMを搭載したNVIDIA GPU
 - WSL (Windows Subsystem for Linux)
 - [Docker Desktop](https://www.docker.com/)
+- 10GB程度のデータをダウンロードできるインターネット回線
 
 ## 動作環境の準備
 
@@ -28,6 +33,8 @@ wsl --install
 以上です。処理が完了したらVMDファイルが入った新しいフォルダが開きます。
 例えば動画ファイルが "c:\data\test.mp4" の場合、フォルダは "c:\data\test_20221103_210358\06_motion" のような名前になります。(日付と時刻によってフォルダ名が変わります)
 
+まずは[サンプル動画](https://drive.google.com/open?id=1ccBzmONGNDbvmKa7SSqwMRPKQ3q-_6LG)で試し、正常にVMDファイルが作られるのを確認することをお勧めします。
+
 ## ライセンス
 MIT License です。詳しくは [LICENSE](LICENSE) 参照。
 
@@ -37,3 +44,22 @@ MIT License です。詳しくは [LICENSE](LICENSE) 参照。
 - [AlphaPose](https://github.com/MVIG-SJTU/AlphaPose#license)
 - [3D-Multi-Person-Pose (MIT License)](https://github.com/miu200521358/3D-Multi-Person-Pose/blob/main/LICENSE)
 - [PoseTriplet (MIT License)](https://github.com/Garfield-kh/PoseTriplet/blob/main/LICENSE)
+
+## FAQ
+
+Q. 動かない / NVIDIA GPUが無い / Windows 10ではどうすれば？
+
+A. [Colab版](https://colab.research.google.com/github/miu200521358/motion_trace_colab/blob/master/MMDAutoTrace3.ipynb)をお勧めします。
+
+## 連絡先
+
+バグ報告は下記のいずれかにどうぞ。
+表示されたメッセージと、本プログラムのバージョンを併せてご連絡ください。
+エラーメッセージはコピー＆ペーストでそのままの内容を貼り付けてください。
+Twitterの場合は文字数が限られるのでスクリーンショットでも構いません。
+（必要な情報が書かれていなかったり、FAQにある内容だったり、あるいは単に忙しかったりすると放置するかもしれませんがご了承ください）
+
+- GitHub の issues
+  https://github.com/errno-mmd/mmd-auto-trace-3-docker/issues
+- Twitter で @errno_mmd にメンションを送る
+  https://twitter.com/errno_mmd

@@ -6,6 +6,7 @@ Tool to run MMD auto trace v3 on Docker
 - NVIDIA GPU with at least 4GB VRAM
 - WSL (Windows Subsystem for Linux)
 - [Docker Desktop](https://www.docker.com/)
+- Broadband Internet access for downloading about 10GB data
 
 ## Installation
 1. Install WSL
@@ -31,3 +32,12 @@ This program runs the mmd-auto-trace-3 container that contains following program
 - [AlphaPose](https://github.com/MVIG-SJTU/AlphaPose#license)
 - [3D-Multi-Person-Pose (MIT License)](https://github.com/miu200521358/3D-Multi-Person-Pose/blob/main/LICENSE)
 - [PoseTriplet (MIT License)](https://github.com/Garfield-kh/PoseTriplet/blob/main/LICENSE)
+
+## Bug report
+
+If you find a bug, please contact me.
+
+- Create an "issue" on GitHub
+  https://github.com/errno-mmd/mmd-auto-trace-3-docker/issues
+- Mention to @errno_mmd on Twitter
+  https://twitter.com/errno_mmd

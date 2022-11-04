@@ -24,7 +24,7 @@ RUN apt install -y curl
 RUN apt install -y unzip
 RUN apt install -y libopencv-dev
 
-RUN git clone --recursive --depth 1 -b develop "https://github.com/miu200521358/mmd-auto-trace-3.git" /mmd-auto-trace-3
+RUN git clone --recursive --depth 1 -b ver3.00.00 "https://github.com/miu200521358/mmd-auto-trace-3.git" /mmd-auto-trace-3
 
 RUN python3.9 -m pip install torch==1.12.1+cu113 torchvision==0.13.1+cu113 torchaudio==0.12.1 --extra-index-url https://download.pytorch.org/whl/cu113
 RUN python3.9 -m pip install cython
