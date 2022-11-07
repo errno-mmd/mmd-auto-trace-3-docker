@@ -2,7 +2,7 @@
 Tool to run MMD auto trace v3 on Docker
 
 ## System requirements
-- Windows 11
+- Windows 11 or Windows 10 (version 21H2 or later)
 - NVIDIA GPU with at least 4GB VRAM
 - WSL (Windows Subsystem for Linux)
 - [Docker Desktop](https://www.docker.com/)

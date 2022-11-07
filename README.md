@@ -9,7 +9,7 @@ MMD自動トレースv3を(Dockerを用いて)ローカルPCで動かすため�
 
 ## 動作に必要なもの
 
-- Windows 11
+- Windows 11 または、バージョン21H2以降のWindows 10
 - 4GB以上のVRAMを搭載したNVIDIA GPU
 - WSL (Windows Subsystem for Linux)
 - [Docker Desktop](https://www.docker.com/)
@@ -47,7 +47,7 @@ MIT License です。詳しくは [LICENSE](LICENSE) 参照。
 
 ## FAQ
 
-Q. 動かない / NVIDIA GPUが無い / Windows 10ではどうすれば？
+Q. 動かない / NVIDIA GPUが無い
 
 A. [Colab版](https://colab.research.google.com/github/miu200521358/motion_trace_colab/blob/master/MMDAutoTrace3.ipynb)をお勧めします。
 
