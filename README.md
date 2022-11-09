@@ -21,12 +21,16 @@ MMD自動トレースv3を(Dockerを用いて)ローカルPCで動かすため�
 
 PowerShell上で下記のコマンドを実行するとWSLがインストールされます。
 ```
-wsl --install
+wsl --install -d Ubuntu
 ```
 
 2. [Docker Desktop](https://www.docker.com/) をダウンロードしてインストール
 
 ## 実行方法
+
+0. Docker Desktop を起動しておく  
+   Windows起動後に一度実行すればOKです。
+   なお初回起動時には利用規約を承諾(Accept)する必要があります。
 
 1. 動画ファイルを run_trace.bat にドラッグ＆ドロップ
 
@@ -46,6 +50,10 @@ MIT License です。詳しくは [LICENSE](LICENSE) 参照。
 - [PoseTriplet (MIT License)](https://github.com/Garfield-kh/PoseTriplet/blob/main/LICENSE)
 
 ## FAQ
+
+Q. 「docker: error during connect: This error may indicate that the docker daemon is not running.」というエラーが出る。
+
+A. Docker Desktopが動いていないと思われるので、Docker Desktopを起動してから再実行してください。
 
 Q. 動かない / NVIDIA GPUが無い
 

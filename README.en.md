@@ -13,11 +13,15 @@ Tool to run MMD auto trace v3 on Docker
 
 You can install WSL by following command on PowerShell
 ```
-wsl --install
+wsl --install -d Ubuntu
 ```
 2. Download & Install [Docker Desktop](https://www.docker.com/)
 
 ## Run
+
+0. Start Docker Desktop  
+   For the first time, you need to accept the service agreement.
+
 1. Drag & drop a movie file to run_trace.bat
 
 That's all. You will find a new folder containing generated VMD files when the process finished.  
