@@ -5,7 +5,7 @@ See [README.en.md](README.en.md) if you are not familier with Japanese.
 
 ## 概要
 
-MMD自動トレースv3を(Dockerを用いて)ローカルPCで動かすためのツールです。
+[MMD自動トレースv3](https://qiita.com/miu200521358/items/fb0a7bcf2764d7797e26)を(Dockerを用いて)ローカルPCで動かすためのツールです。
 
 ## 動作に必要なもの
 
